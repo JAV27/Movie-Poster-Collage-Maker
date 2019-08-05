@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Movie-Poster-Collage-Maker/precache-manifest.5d9b6a191df36dc2325423e228bcc779.js"
+  "/Movie-Poster-Collage-Maker/precache-manifest.273cecd6ad767e77d12a2a88377fea30.js"
 );
 
 self.addEventListener('message', (event) => {
