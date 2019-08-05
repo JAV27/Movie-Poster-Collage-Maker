@@ -14,3 +14,40 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.settings {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.settings .container {
+    width: 60%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.settings .container .slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 20px 0
+}
+
+.table .cell {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+}

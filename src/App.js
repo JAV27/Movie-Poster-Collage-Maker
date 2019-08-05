@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Settings from './components/Settings';
+import Table from './components/Table';
 
 class App extends React.Component {
 
@@ -14,6 +15,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Settings/>
+        <Table columns="5" rows="5"/>
       </div>
     );
   }
