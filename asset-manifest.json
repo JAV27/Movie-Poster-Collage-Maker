@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Movie-Poster-Collage-Maker/static/css/main.f542b2ad.chunk.css",
-    "main.js": "/Movie-Poster-Collage-Maker/static/js/main.1ca9472c.chunk.js",
-    "main.js.map": "/Movie-Poster-Collage-Maker/static/js/main.1ca9472c.chunk.js.map",
+    "main.css": "/Movie-Poster-Collage-Maker/static/css/main.dcf4bb54.chunk.css",
+    "main.js": "/Movie-Poster-Collage-Maker/static/js/main.f807d214.chunk.js",
+    "main.js.map": "/Movie-Poster-Collage-Maker/static/js/main.f807d214.chunk.js.map",
     "runtime~main.js": "/Movie-Poster-Collage-Maker/static/js/runtime~main.789f2176.js",
     "runtime~main.js.map": "/Movie-Poster-Collage-Maker/static/js/runtime~main.789f2176.js.map",
-    "static/js/2.769a19d2.chunk.js": "/Movie-Poster-Collage-Maker/static/js/2.769a19d2.chunk.js",
-    "static/js/2.769a19d2.chunk.js.map": "/Movie-Poster-Collage-Maker/static/js/2.769a19d2.chunk.js.map",
+    "static/js/2.8a586615.chunk.js": "/Movie-Poster-Collage-Maker/static/js/2.8a586615.chunk.js",
+    "static/js/2.8a586615.chunk.js.map": "/Movie-Poster-Collage-Maker/static/js/2.8a586615.chunk.js.map",
     "index.html": "/Movie-Poster-Collage-Maker/index.html",
-    "precache-manifest.273cecd6ad767e77d12a2a88377fea30.js": "/Movie-Poster-Collage-Maker/precache-manifest.273cecd6ad767e77d12a2a88377fea30.js",
+    "precache-manifest.fc89987eab9f19f1ecefbf8e20a1e635.js": "/Movie-Poster-Collage-Maker/precache-manifest.fc89987eab9f19f1ecefbf8e20a1e635.js",
     "service-worker.js": "/Movie-Poster-Collage-Maker/service-worker.js",
-    "static/css/main.f542b2ad.chunk.css.map": "/Movie-Poster-Collage-Maker/static/css/main.f542b2ad.chunk.css.map"
+    "static/css/main.dcf4bb54.chunk.css.map": "/Movie-Poster-Collage-Maker/static/css/main.dcf4bb54.chunk.css.map"
   }
 }
