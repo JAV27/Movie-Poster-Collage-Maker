@@ -1,42 +1,33 @@
 import React from 'react';
-import { thisExpression } from '@babel/types';
+import Cell from './Cell';
 
-class Table extends React.Component {
+const createTable = (cols, rows) => {
+  let table = [];
 
-  constructor(props) {
-    super(props);
+  for(let i=0; i<rows; i++) {
+    
+    let cells = [];
 
-    this.state = {
-      columns: this.props.columns,
-      rows: this.props.rows,
-    }
-  }
-
-  createTable = () => {
-    let table = [];
-
-    for(let i=0; i<this.state.rows; i++) {
-      
-      let cells = [];
-
-      for(let j=0; j<this.state.columns; j++){
-        cells.push(<div className="cell">Cell!</div>)
-      }
-
-      table.push(<div className="col">{cells}</div>)
-
+    for(let j=0; j<cols; j++){
+      cells.push(<Cell/>)
     }
 
-    return table;
+    table.push(<div className="col">{cells}</div>)
+
   }
 
-  render() {
-    return (
-      <div className="table">
-        {this.createTable()}
-      </div>
-    );
-  }
+  return table;
+}
+
+
+function Table({rows, cols}) {
+
+  return (
+    <div className="table">
+      {createTable(rows, cols)}
+    </div>
+  );
+
 }
 
 export default Table;

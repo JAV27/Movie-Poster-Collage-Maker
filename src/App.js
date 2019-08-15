@@ -1,24 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Settings from './components/Settings';
 import Table from './components/Table';
 
-class App extends React.Component {
+function App() {
 
-  state = {
-    test: 'test'
+  const [rows, setRows] = useState(3);
+  const [cols, setCols] = useState(5);
+
+  function onSliderChange(e) {
+    if(e.target.name === "rows") {
+      setRows(e.target.value);
+    } else if(e.target.name === "cols") {
+      setCols(e.target.value);
+    }
   }
 
-  render() {
-    return (
+  return (
       <div className="App">
         <Header/>
-        <Settings/>
-        <Table columns="5" rows="5"/>
+        <Settings rows={rows} cols={cols} onSliderChange={onSliderChange}/>
+        <Table rows={rows} cols={cols}/>
       </div>
-    );
-  }
+  )
+  
 }
 
 export default App;

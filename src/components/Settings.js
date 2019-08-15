@@ -1,22 +1,22 @@
 import React from 'react';
 
-class Settings extends React.Component {
-  render() {
-    return (
-        <div className="settings">
-          <div className="container">
-            <div class="slider">
-              <label for="rows">Number of Rows</label>
-              <input type="range" id="rows" min="1" max="5"/>
-            </div>
-            <div class="slider">
-              <label for="cols">Number of Columns</label>
-              <input type="range" id="cols" min="1" max="5"/>
-            </div>
-          </div>
+function Settings({rows, cols, onSliderChange}) {
+  return (
+    <div className="settings">
+      <div className="container">
+        <div className="slider">
+          <label htmlFor="rows">Number of Rows</label>
+          <input type="range" name="rows" min="1" max="5" value={rows} onChange={(e) => onSliderChange(e)}/>
+          {rows}
         </div>
-    );
-  }
+        <div className="slider">
+          <label htmlFor="cols">Number of Columns</label>
+          <input type="range" name="cols" min="1" max="8" value={cols} onChange={(e) => onSliderChange(e)}/>
+          {cols}
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Settings;
