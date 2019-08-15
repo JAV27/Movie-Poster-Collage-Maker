@@ -3,19 +3,12 @@ import './App.css';
 import Header from './components/Header';
 import Settings from './components/Settings';
 import Table from './components/Table';
+import useSlider from './hooks/useSlider';
+const APIKey = "ed07fde2a29e865fa73860b991476f93";
 
 function App() {
 
-  const [rows, setRows] = useState(3);
-  const [cols, setCols] = useState(5);
-
-  function onSliderChange(e) {
-    if(e.target.name === "rows") {
-      setRows(e.target.value);
-    } else if(e.target.name === "cols") {
-      setCols(e.target.value);
-    }
-  }
+  const {rows, cols, onSliderChange} = useSlider();
 
   return (
       <div className="App">
