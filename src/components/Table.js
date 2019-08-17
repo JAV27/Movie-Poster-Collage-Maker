@@ -1,7 +1,7 @@
 import React from 'react';
 import Cell from './Cell';
 
-const createTable = (cols, rows) => {
+const createTable = (cols, rows, toggle) => {
   let table = [];
 
   for(let i=0; i<rows; i++) {
@@ -9,7 +9,7 @@ const createTable = (cols, rows) => {
     let cells = [];
 
     for(let j=0; j<cols; j++){
-      cells.push(<Cell/>)
+      cells.push(<Cell toggle={toggle}/>)
     }
 
     table.push(<div className="col">{cells}</div>)
@@ -20,11 +20,11 @@ const createTable = (cols, rows) => {
 }
 
 
-function Table({rows, cols}) {
+function Table({rows, cols, toggle}) {
 
   return (
     <div className="table">
-      {createTable(rows, cols)}
+      {createTable(rows, cols, toggle)}
     </div>
   );
 
